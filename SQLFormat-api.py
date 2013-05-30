@@ -16,7 +16,7 @@ class SqlformatCommand(sublime_plugin.TextCommand):
                 'indent_width': 4,
                 'identifier_case': 'lower',
                 'keyword_case': 'upper',
-                'strip_comments': 1
+                #'strip_comments': 1,
             }
             data = urlencode(params)
             response = urlopen('http://sqlformat.org/api/v1/format', data=data.encode('utf8'))
